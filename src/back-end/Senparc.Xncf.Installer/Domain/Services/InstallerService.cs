@@ -140,25 +140,7 @@ namespace Senparc.Xncf.Installer.Domain.Services
                         }
                     }
                 }
-               /*foreach (var needModelId in needModelList)
-                {
-                    if (!installedList.Contains(needModelId))
-                    {
-                        //var docRegister = XncfRegisterManager.RegisterList.FirstOrDefault(z => z.Uid == needModel);
-                        var docModule = await _xncfModuleService.GetObjectAsync(z => z.Uid == needModelId);
-                        if (docModule == null)
-                        {
-                            await _xncfModuleService.InstallModuleAsync(needModelId);
-                            docModule = await _xncfModuleService.GetObjectAsync(z => z.Uid == needModelId);
-                        }
-                        //开启模块
-                        if (docModule.State != Ncf.Core.Enums.XncfModules_State.开放)
-                        {
-                            docModule.UpdateState(Ncf.Core.Enums.XncfModules_State.开放);
-                            await _xncfModuleService.SaveObjectAsync(docModule);
-                        }
-                    }
-                }*/
+               
             }
 
 
